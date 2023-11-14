@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Order Form</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ddd, #fff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Order Form</h1>
+        <h1>Nike Air Max Pulse</h1>
+        <h2>-35%,<b>₹7189.35</b><br>MRP :<del> ₹12599.00</del></h2>
+        <form action="https://formsubmit.co/deathmurdrer@gmail.com" method="post">
+            <select name="Size" required>
+                <option value="">Select Size</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+
+            <select name="quantity" required>
+                <option value="">Select Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+                <option value="3">6</option>
+                
+            </select>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="pincode" placeholder="Pincode" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

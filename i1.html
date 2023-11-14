@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Women - ShoeZoo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!---HEADER-->
+        <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logoup.png" width="100">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="men.html">Men</a></li>
+                        <li> <a href="women.html">Women</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                        <li> <a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                
+                <!--<img src="images/search.png" width="30px" height="30px" style="margin: 0px 0px 17px 17px;">
+                <img src="images/love.png" width="35px" height="35px" style="margin: 0px 0px 17px 17px;"--->
+                
+                <a href="account.html"><img src="images/user.png" width="30px" height="30px" style="margin: 10px 0px 25px 25px;"></a>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="menutoggle()">
+                
+        </div>
+        
+            
+<!---single product page---->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/p1d.jpg" width="100%" id="ProductImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/p1d.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/p1a.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/p1c.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/p1b.jpg" width="100%" class="small-img">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home/ Women Shoes</p>
+            <h1>Adidas Mens Nike Free Metcon 4</h1>
+            <h2>-35%,<b>₹8189.35</b><br>MRP :<del> ₹12599.00</del></h2>
+            <select>
+                <option>Select Size</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+            </select>
+            
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+        </div>
+    </div>
+   </div>
+   <br><br>
+   <br>
+   <br>
+   <br>
+
+
+
+<!---SOCIAL MEDIA -->
+                    <div class="footer">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="footer-col-1">
+                                    <h2>CONNECT WITH US: </h2>
+                                    <div class="app-logo">
+                                        <a href="https://instagram.com/yadav.lalit_?igshid=YzgyMTM2MGM="><img src="images/instagram.png"></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100021113231813"><img src="images/facebook.png"></a>
+                                        <a href="https://twitter.com/2009Lalit?t=okTASYStJw4o4ayKZNK9Hw&s=09"><img src="images/twitter.png"></a>
+                                    </div>
+                                  </div>
+<!----BRAND LOGO-->
+                                  <div class="footer-col-2">
+                                    <a href="index.html"><img src="images/logoup.png"></a>
+                                    <h1>SHOEZOO</h1>
+                                    <h2>GIVING VALUE TO YOUR FEET</h2>
+                                </div>
+
+                                <div class="footer-col-3">
+                                    
+                                   
+                                  </div>
+<!----QUERY FORM-->
+                                  <div class="footer-col-4">
+                                    <h2>FOR ANY QUERY </h2>
+                                    <div class="content">
+                                        <form action="#">
+                                            <div class="email">
+                                                <div class="text">Email* </div>
+                                                <input type="email" required>
+                                            </div>
+                                            <div class="msg">
+                                            <div class="text">Message*</div> 
+                                            <textarea rows="2" cols="25" required></textarea> 
+                                            </div>
+                                            <div class="button">
+                                                <button type="submit">Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <hr>
+                                <h3 class="copyright">Copyright 2023 - ShoeZoo<br>
+                                    Under the Copyright Disclaimer under Section 107 of the Copyright Act 1976, there is an allowance for 'fair use' of copyrighted material for such purposes as education and research, scholarship, criticism, news reporting, comment, and teaching.</h3>
+                            <hr>
+                        </div>
+                    </div>
+
+                    
+    
+<!---javascript  of toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight== "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+
+    }
+</script>
+
+<!---js for product zoom-->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick= function()
+        {
+            ProductImg.src= SmallImg[0].src;
+        }
+        SmallImg[1].onclick= function()
+        {
+            ProductImg.src= SmallImg[1].src;
+        }
+        SmallImg[2].onclick= function()
+        {
+            ProductImg.src= SmallImg[2].src;
+        }
+        SmallImg[3].onclick= function()
+        {
+            ProductImg.src= SmallImg[3].src;
+        }
+
+</script>
+        
+    </body>
+</html>

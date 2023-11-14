@@ -1,0 +1,524 @@
+/*HEADER*/
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+}
+p{
+    color:black
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+}
+.col-2 h2{
+    color: brown;
+}
+.col-2 h3{
+    font-size: 80px;
+    line-height: 50px;
+    margin: 15px 0;
+}
+/*EXPLORE MORE BUTTON*/
+
+.btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 50px;
+    margin: 100px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.header{
+    background: radial-gradient(white,rgb(186, 180, 180));
+}
+.btn:hover{
+    background: rgb(51, 90, 163);
+
+}
+.categories{
+
+    margin: 70px 0;
+
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.col-3 img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+
+}
+.col-3:hover img{
+    transform: scale(1.5);
+}
+.small-container{
+    max-width: 2140px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+}
+.col-4 img{
+    width: 330px;
+    height: 410px;
+    transition: 0.5s all ease-in-out;
+
+}
+.title{
+    text-align: center;
+    margin: 30px auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 15px 0;
+}
+.col-4:hover img{
+    transform: scale(1.5);
+}
+
+.offer{
+    background: radial-gradient(rgb(13, 13, 95),rgb(190, 186, 186));
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+.brands{
+    margin: 100px auto;
+
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 200px;
+    height: 100px;
+    
+}
+/*------------footer-------------*/
+.footer{
+    background: rgb(51, 50, 50);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+}
+.footer p{
+    color: beige;
+
+}
+.footer h3{
+    color: beige;
+    margin-bottom:20px ;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 25px;
+    margin-bottom: 20px;
+
+
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex-basis: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+    
+}
+.footer-col-3{
+    flex-basis:17% ;
+    text-align: center;
+    font-size: 20px;
+   
+}
+.footer-col-4{
+    flex-basis: 17%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+
+}
+ul{
+    list-style-type:none;
+    color: beige;
+}
+
+
+.app-logo img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 10px 10px;
+}
+.button{
+    display: inline-block;
+    background: rgb(251, 249, 249);
+    color: rgb(15, 12, 12);
+    padding: 5px 5px;
+    margin: 5px 0;
+    border-radius: 20px;
+    transition: background 0.5s;
+    text-align: center;
+}
+form .button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+.footer hr{
+    border: none;
+    background: rgb(246, 244, 244);
+    height: 0.5px;
+    margin: 10px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    margin-bottom: 10px;
+}
+/*---account page---------------------------------------------------------------------------------------------*/
+.account-page{
+    
+    background: radial-gradient(white,rgb(186, 180, 180));
+
+}
+
+.form-container{
+    background: rgb(238, 238, 255);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 30px 0px black;
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+
+
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 00 10px;
+    border: 1px solid black;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+form .btn{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+
+}
+#RegisterForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+/*--------------------------------------- men & women --------------------------------*/
+
+.page-btn{
+    margin: 0 auto 80px;
+
+}
+.page-btn span{
+    display: inline-block;
+    border: 3px solid black;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}   
+.page-btn span:hover{
+    background:rgb(46, 143, 223);
+    color:rgb(182, 194, 178);
+
+} 
+
+
+
+/*-------------------------contact us----------------------*/
+
+.contact-box{
+    background: radial-gradient(rgb(213, 213, 213),rgb(251, 251, 251));
+    display: flex;
+
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background-image: url(images/acc.jpg);
+    color:rgb(51, 50, 50)
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+
+/*------------------about us------------------*/
+
+
+.about-page{
+    
+    background: radial-gradient(rgb(255, 255, 255),rgb(255, 246, 208));
+
+}
+.testimonials{
+    margin: 50px auto;
+    padding: 30px;
+
+}
+.testimonials h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.testimonials h3{
+    text-align: center;
+    color: rgb(251, 8, 8);
+}
+.testimonials h2::after{
+    content:'';
+    background: rgb(4, 4, 4);
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 5px;
+
+    
+}
+.testimonials img{
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    align-items: center;
+}
+.testimonials .row{
+    margin-top: 20px;
+}
+.col-md-4{
+    margin: 40px auto;
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.profile{
+    padding: 50px 80px 20px;
+    background: radial-gradient(rgb(255, 255, 255),rgb(239, 239, 239));
+}
+
+/*--------single product details-----*/
+
+.single-product{
+    margin-top: 20px;
+     
+}
+.single-product .col-2 img{
+    padding: 0;
+
+} 
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+input:focus{
+    outline: none;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY FOR LESS THAN 800 SCREEN SIZE*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* media query for less tham 600 screen size*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    
+    }
+    .col-2, .col-3, .col-4, .col-5,.footer-col-1, .footer-col-2,.footer-col-3, .footer-col-4{
+        flex-basis: 100%;
+    }
+
+}
+
+
